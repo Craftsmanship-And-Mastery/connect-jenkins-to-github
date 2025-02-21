@@ -37,6 +37,9 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Testing..'
+                echo '...first ever webhook triggered from GitHub by HNS'
+                sleep 5
+                echo 'Test ist successful'
             }
         }
         stage('Report') {
